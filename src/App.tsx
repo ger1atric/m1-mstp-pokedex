@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { motion } from 'motion/react';
-import { Search, Filter, Info, Github } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
+import { Search, Filter, Info, Github, Download } from 'lucide-react';
+import JSZip from 'jszip';
 import { COHORT_DATA, CohortMember } from './data/cohort';
 import { PokedexCard } from './components/PokedexCard';
 import { PokedexModal } from './components/PokedexModal';
@@ -62,6 +63,64 @@ export default function App() {
   const handleUpdateMember = (updatedMember: CohortMember) => {
     setCohort(prev => prev.map(m => m.id === updatedMember.id ? updatedMember : m));
     setSelectedMember(updatedMember);
+  };
+
+  const handleExport = async () => {
+    const zip = new JSZip();
+    const images = zip.folder('images');
+
+    const cleanCohort = cohort.map(member => {
+      const clean = { ...member };
+
+      // Handle main image
+      if (clean.imageUrl?.startsWith('data:')) {
+        const ext = clean.imageUrl.split(';')[0].split('/')[1]?.replace('jpeg', 'jpg') || 'jpg';
+        const filename = `${member.id}.${ext}`;
+        const base64 = clean.imageUrl.split(',')[1];
+        images!.file(filename, base64, { base64: true });
+        clean.imageUrl = `/images/${filename}`;
+      }
+
+      // Handle gallery images
+      if (clean.galleryImages?.length) {
+        clean.galleryImages = clean.galleryImages.map((img, i) => {
+          if (img.startsWith('data:')) {
+            const ext = img.split(';')[0].split('/')[1]?.replace('jpeg', 'jpg') || 'jpg';
+            const filename = `${member.id}-gallery-${i + 1}.${ext}`;
+            const base64 = img.split(',')[1];
+            images!.file(filename, base64, { base64: true });
+            return `/images/${filename}`;
+          }
+          return img;
+        });
+      }
+
+      return clean;
+    });
+
+    // Add cohort JSON
+    zip.file('cohort-export.json', JSON.stringify(cleanCohort, null, 2));
+
+    // Add a README with instructions
+    zip.file('README.txt', [
+      'COHORT EXPORT',
+      '=============',
+      '',
+      '1. Move all files from the images/ folder into your project\'s public/images/',
+      '2. Run: node scripts/import-cohort.mjs cohort-export.json',
+      '3. Run: git add . && git commit -m "update cohort" && git push',
+    ].join('\n'));
+
+    // Generate and download zip
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'cohort-export.zip';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   };
 
   return (
@@ -153,6 +212,22 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* Export button — floats above modal when editing */}
+      <AnimatePresence>
+        {isModalEditing && (
+          <motion.button
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 16 }}
+            onClick={handleExport}
+            className="fixed bottom-6 right-6 z-[60] flex items-center gap-2 px-4 py-2.5 bg-zinc-900 text-white rounded-xl font-bold text-xs uppercase shadow-xl hover:bg-zinc-700 transition-colors border border-white/10"
+          >
+            <Download className="w-4 h-4" />
+            Export All
+          </motion.button>
+        )}
+      </AnimatePresence>
 
       {/* Modal */}
       <PokedexModal

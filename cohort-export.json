@@ -1,41 +1,4 @@
-export interface CohortMember {
-  id: string;
-  name: string;
-  type1: string;
-  type2?: string;
-  typeColors?: {
-    type1?: string;
-    type2?: string;
-  };
-  galleryImages?: string[];
-  galleryImagePositions?: string[];
-  moves: string[];
-  specialAttack: string;
-  hobbies: string[];
-  description: string;
-  cardDescription: string;
-  stats: {
-    caffeine: number;
-    coding: number;
-    wetLab: number;
-    clinical: number;
-    ankiConsistency: number;
-  };
-  statLabels: {
-    caffeine: string;
-    coding: string;
-    wetLab: string;
-    clinical: string;
-    ankiConsistency: string;
-  };
-  imageUrl: string;
-  imagePosition?: string; // e.g., "center", "top", "bottom"
-  ballUrl: string;
-  spriteUrl: string;
-  hometown: string;
-}
-
-export const COHORT_DATA: CohortMember[] = [
+[
   {
     "id": "001",
     "name": "Jerry Shen",
@@ -528,4 +491,4 @@ export const COHORT_DATA: CohortMember[] = [
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/133.gif",
     "hometown": "Ann Arbor, MI"
   }
-];
+]

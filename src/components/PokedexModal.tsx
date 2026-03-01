@@ -574,24 +574,27 @@ export const PokedexModal: React.FC<PokedexModalProps> = ({ member, canEdit, onC
                       <span className="text-xs font-bold text-zinc-800">{member.name}</span>
                     </div>
                     
-                    <motion.img
-                      key={isEditing ? `edit-${editGalleryIndex}` : `${member.id}-${galleryIndex}`}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 0.2 }}
-                      src={isEditing ? editCurrentSrc : allImages[galleryIndex]}
-                      alt={member.name}
-                      draggable={false}
-                      className="w-full h-full object-cover select-none"
-                      style={{
-                        objectPosition: (isEditing ? objectPosition : currentImagePosition) as string,
-                        touchAction: isEditing ? 'none' : 'auto'
-                      }}
-                      onLoad={handleImageLoad}
-                      onPan={handlePan}
-                      onPanEnd={handlePanEnd}
-                      referrerPolicy="no-referrer"
-                    />
+                    <AnimatePresence mode="sync">
+                      <motion.img
+                        key={isEditing ? `edit-${editGalleryIndex}` : `${member.id}-${galleryIndex}`}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.4, ease: 'easeInOut' }}
+                        src={isEditing ? editCurrentSrc : allImages[galleryIndex]}
+                        alt={member.name}
+                        draggable={false}
+                        className="absolute inset-0 w-full h-full object-cover select-none"
+                        style={{
+                          objectPosition: (isEditing ? objectPosition : currentImagePosition) as string,
+                          touchAction: isEditing ? 'none' : 'auto'
+                        }}
+                        onLoad={handleImageLoad}
+                        onPan={handlePan}
+                        onPanEnd={handlePanEnd}
+                        referrerPolicy="no-referrer"
+                      />
+                    </AnimatePresence>
 
                     {!isEditing && allImages.length > 1 && (
                       <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-30">

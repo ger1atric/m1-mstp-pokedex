@@ -60,7 +60,7 @@ export const COHORT_DATA: CohortMember[] = [
       clinical: "Clinical",
       ankiConsistency: "Anki"
     },
-    imageUrl: "https://picsum.photos/seed/alex/400/400",
+    imageUrl: "/images/001.jpg",
     imagePosition: "center",
     ballUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png",
     spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif", // Pikachu
@@ -90,7 +90,7 @@ export const COHORT_DATA: CohortMember[] = [
       clinical: "Clinical",
       ankiConsistency: "Anki"
     },
-    imageUrl: "https://picsum.photos/seed/jordan/400/400",
+    imageUrl: "/images/002.jpg",
     imagePosition: "center",
     ballUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png",
     spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/133.gif", // Eevee
@@ -120,7 +120,7 @@ export const COHORT_DATA: CohortMember[] = [
       clinical: "Clinical",
       ankiConsistency: "Anki"
     },
-    imageUrl: "https://picsum.photos/seed/casey/400/400",
+    imageUrl: "/images/003.jpg",
     imagePosition: "center",
     ballUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png",
     spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/175.gif", // Togepi
@@ -150,7 +150,7 @@ export const COHORT_DATA: CohortMember[] = [
       clinical: "Clinical",
       ankiConsistency: "Anki"
     },
-    imageUrl: "https://picsum.photos/seed/taylor/400/400",
+    imageUrl: "/images/004.jpg",
     imagePosition: "center",
     ballUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png",
     spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/39.gif", // Jigpuff
@@ -180,7 +180,7 @@ export const COHORT_DATA: CohortMember[] = [
       clinical: "Clinical",
       ankiConsistency: "Anki"
     },
-    imageUrl: "https://picsum.photos/seed/morgan/400/400",
+    imageUrl: "/images/005.jpg",
     imagePosition: "center",
     ballUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/luxury-ball.png",
     spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/151.gif", // Mew
@@ -210,7 +210,7 @@ export const COHORT_DATA: CohortMember[] = [
       clinical: "Clinical",
       ankiConsistency: "Anki"
     },
-    imageUrl: "https://picsum.photos/seed/riley/400/400",
+    imageUrl: "/images/006.jpg",
     imagePosition: "center",
     ballUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/premier-ball.png",
     spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/417.gif", // Pachirisu
@@ -240,7 +240,7 @@ export const COHORT_DATA: CohortMember[] = [
       clinical: "Clinical",
       ankiConsistency: "Anki"
     },
-    imageUrl: "https://picsum.photos/seed/sam/400/400",
+    imageUrl: "/images/007.jpg",
     imagePosition: "center",
     ballUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/timer-ball.png",
     spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/7.gif", // Squirtle
@@ -270,7 +270,7 @@ export const COHORT_DATA: CohortMember[] = [
       clinical: "Clinical",
       ankiConsistency: "Anki"
     },
-    imageUrl: "https://picsum.photos/seed/jamie/400/400",
+    imageUrl: "/images/008.jpg",
     imagePosition: "center",
     ballUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/quick-ball.png",
     spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif", // Bulbasaur
@@ -300,7 +300,7 @@ export const COHORT_DATA: CohortMember[] = [
       clinical: "Clinical",
       ankiConsistency: "Anki"
     },
-    imageUrl: "https://picsum.photos/seed/peyton/400/400",
+    imageUrl: "/images/009.jpg",
     imagePosition: "center",
     ballUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heal-ball.png",
     spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/113.gif", // Chansey
@@ -330,7 +330,7 @@ export const COHORT_DATA: CohortMember[] = [
       clinical: "Clinical",
       ankiConsistency: "Anki"
     },
-    imageUrl: "https://picsum.photos/seed/dakota/400/400",
+    imageUrl: "/images/010.jpg",
     imagePosition: "center",
     ballUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dusk-ball.png",
     spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/216.gif", // Teddiursa
@@ -360,7 +360,7 @@ export const COHORT_DATA: CohortMember[] = [
       clinical: "Clinical",
       ankiConsistency: "Anki"
     },
-    imageUrl: "https://picsum.photos/seed/skyler/400/400",
+    imageUrl: "/images/011.jpg",
     imagePosition: "center",
     ballUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heavy-ball.png",
     spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/172.gif", // Pichu
@@ -390,7 +390,7 @@ export const COHORT_DATA: CohortMember[] = [
       clinical: "Clinical",
       ankiConsistency: "Anki"
     },
-    imageUrl: "https://picsum.photos/seed/charlie/400/400",
+    imageUrl: "/images/012.jpg",
     imagePosition: "center",
     ballUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/luxury-ball.png",
     spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/133.gif", // Eevee

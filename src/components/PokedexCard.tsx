@@ -33,7 +33,7 @@ export const PokedexCard: React.FC<PokedexCardProps> = ({ member, onClick }) => 
             <img 
               src={member.ballUrl} 
               alt="Pokeball" 
-              className="w-6 h-6 opacity-80 group-hover:opacity-100 transition-opacity"
+              className="w-12 h-12 opacity-80 group-hover:opacity-100 transition-opacity"
               referrerPolicy="no-referrer"
             />
           </div>

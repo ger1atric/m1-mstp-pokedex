@@ -291,7 +291,7 @@ export const PokedexModal: React.FC<PokedexModalProps> = ({ member, canEdit, onC
               <img 
                 src={member.ballUrl} 
                 alt="Member Ball" 
-                className="w-8 h-8"
+                className="w-14 h-14"
                 referrerPolicy="no-referrer"
               />
               <h2 className="ml-2 font-pixel text-[12px] text-zinc-800 tracking-tight uppercase">
@@ -313,7 +313,7 @@ export const PokedexModal: React.FC<PokedexModalProps> = ({ member, canEdit, onC
               <img 
                 src={member.spriteUrl} 
                 alt="Member Sprite" 
-                className="w-10 h-10"
+                className="w-16 h-16"
                 referrerPolicy="no-referrer"
               />
             </div>
@@ -568,7 +568,7 @@ export const PokedexModal: React.FC<PokedexModalProps> = ({ member, canEdit, onC
                       <img 
                         src={member.ballUrl} 
                         alt="Pokeball" 
-                        className="w-4 h-4"
+                        className="w-6 h-6"
                         referrerPolicy="no-referrer"
                       />
                       <span className="text-xs font-bold text-zinc-800">{member.name}</span>
@@ -795,7 +795,7 @@ export const PokedexModal: React.FC<PokedexModalProps> = ({ member, canEdit, onC
               <img 
                 src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png" 
                 alt="Great Ball" 
-                className="w-5 h-5"
+                className="w-8 h-8"
                 referrerPolicy="no-referrer"
               />
             </div>

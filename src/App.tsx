@@ -129,11 +129,11 @@ export default function App() {
       <header className="sticky top-0 z-40 bg-pokedex-red border-b-4 border-black/10 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-inner border-4 border-zinc-200 translate-y-1">
-              <img 
-                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" 
-                alt="Pokeball" 
-                className="w-10 h-10 animate-bounce"
+            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-inner border-4 border-zinc-200 translate-y-1">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"
+                alt="Pokeball"
+                className="w-12 h-12 animate-bounce"
                 referrerPolicy="no-referrer"
               />
             </div>
@@ -148,7 +148,7 @@ export default function App() {
               <img 
                 src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" 
                 alt="Pikachu" 
-                className="w-8 h-8 -my-2"
+                className="w-12 h-12 -my-2"
                 referrerPolicy="no-referrer"
               />
               <span className="font-pixel text-[8px] text-white/80 uppercase">Cohort Size: {cohort.length}</span>
@@ -186,7 +186,7 @@ export default function App() {
               <img 
                 src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png" 
                 alt="Ultra Ball" 
-                className="w-8 h-8"
+                className="w-11 h-11"
                 referrerPolicy="no-referrer"
               />
               <h2 className="font-pixel text-xs">MSTP Pokedex</h2>

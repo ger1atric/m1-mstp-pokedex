@@ -59,7 +59,7 @@ export const COHORT_DATA: CohortMember[] = [
       "caffeine": 25,
       "coding": 75,
       "wetLab": 25,
-      "clinical": 80,
+      "clinical": 75,
       "ankiConsistency": 100
     },
     "statLabels": {
@@ -162,7 +162,7 @@ export const COHORT_DATA: CohortMember[] = [
       "ankiConsistency": "Anki"
     },
     "imageUrl": "/images/003.jpg",
-    "imagePosition": "50.00% 100.00%",
+    "imagePosition": "66.54% 100.00%",
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/175.gif",
     "hometown": "Providence, RI",
@@ -177,32 +177,36 @@ export const COHORT_DATA: CohortMember[] = [
       "59.09% 50.00%",
       "50.00% 56.61%",
       "50.00% 100.00%"
-    ]
+    ],
+    "typeColors": {
+      "type2": "#a3434c"
+    }
   },
   {
     "id": "004",
     "name": "Verina Leung",
-    "type1": "Neuroscience",
-    "type2": "Neurosurgery",
+    "type1": "Cancer Neuroscience",
+    "type2": "Pediatrics",
     "moves": [
-      "Data Crunch",
-      "Viral Spread",
-      "Spreadsheet Wall"
+      "sTanford imposter ",
+      "Rodent Exterminator ",
+      "Night Wanderer"
     ],
-    "specialAttack": "Outbreak Prediction",
+    "specialAttack": "Brain Wave",
     "hobbies": [
-      "Board Games",
-      "Cooking",
-      "Bird Watching"
+      "Thrifting/Antiquing",
+      "Hiking",
+      "Long-Night-Walks",
+      "Crafting"
     ],
-    "description": "Taylor sees the world in spreadsheets. They can predict a flu outbreak before the first sneeze. Don't challenge them to Settlers of Catan.",
-    "cardDescription": "Placeholder",
+    "description": "When Verina isn't responding to you, she likely has her noise-canceling earbuds in listening to her sister’s piano concertos on repeat or she’s on the phone catching up with her 91-year-old grandmother.",
+    "cardDescription": "Two Cuts",
     "stats": {
       "caffeine": 5,
-      "coding": 40,
-      "wetLab": 90,
-      "clinical": 80,
-      "ankiConsistency": 50
+      "coding": 33,
+      "wetLab": 100,
+      "clinical": 40,
+      "ankiConsistency": 75
     },
     "statLabels": {
       "caffeine": "Caffeine",
@@ -212,35 +216,42 @@ export const COHORT_DATA: CohortMember[] = [
       "ankiConsistency": "Anki"
     },
     "imageUrl": "/images/004.jpg",
-    "imagePosition": "50.00% 0.00%",
+    "imagePosition": "50.00% 86.23%",
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/39.gif",
-    "hometown": "Fremont, CA"
+    "hometown": "Honolulu, HI",
+    "typeColors": {
+      "type1": "#efa9f4",
+      "type2": "#ff0505"
+    }
   },
   {
     "id": "005",
-    "name": "Kenyon Weiss",
+    "name": "Kenyon Weis",
     "type1": "Chem-Bio",
-    "type2": "Internal Medicine?",
+    "type2": "Neurology",
     "moves": [
-      "Protein Fold",
-      "Cryo-Freeze",
-      "Active Site Bind"
+      "Brain Storm",
+      "Sleep",
+      "Fist Bump"
     ],
-    "specialAttack": "De Novo Design",
+    "specialAttack": "Irish Goodbye",
     "hobbies": [
-      "Yoga",
-      "Gardening",
-      "Pottery"
+      "Lifting",
+      "Running",
+      "Reading",
+      "Hiking",
+      "Mitochondria",
+      "Learning"
     ],
-    "description": "Morgan thinks in 3D. They can visualize a protein's active site while doing a headstand. Their plants are all named after amino acids.",
-    "cardDescription": "You called?",
+    "description": "When Kenyon is not talking about Mitochondria, you can often find him not talking at all",
+    "cardDescription": "\"Onion\"",
     "stats": {
-      "caffeine": 15,
-      "coding": 15,
-      "wetLab": 90,
+      "caffeine": 5,
+      "coding": 25,
+      "wetLab": 80,
       "clinical": 60,
-      "ankiConsistency": 50
+      "ankiConsistency": 30
     },
     "statLabels": {
       "caffeine": "Caffeine",
@@ -250,15 +261,25 @@ export const COHORT_DATA: CohortMember[] = [
       "ankiConsistency": "Anki"
     },
     "imageUrl": "/images/005.jpg",
-    "imagePosition": "center",
+    "imagePosition": "59.62% 50.00%",
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/luxury-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/151.gif",
-    "hometown": "Pittsburgh, PA"
+    "hometown": "Hard to say",
+    "galleryImages": [
+      "/images/005-gallery-1.jpg",
+      "/images/005-gallery-2.jpg",
+      "/images/005-gallery-3.jpg"
+    ],
+    "galleryImagePositions": [
+      "54.80% 50.00%",
+      "57.35% 50.00%",
+      "50.00% 74.69%"
+    ]
   },
   {
     "id": "006",
     "name": "Aravind Krishnan",
-    "type1": "Immuno",
+    "type1": "Immunology",
     "type2": "Critical Care",
     "moves": [
       "fMRI Scan",
@@ -274,10 +295,10 @@ export const COHORT_DATA: CohortMember[] = [
     "description": "Riley can tell you what you're thinking just by looking at your BOLD signal. They find peace in the waves and on the canvas.",
     "cardDescription": "Where's Sean?",
     "stats": {
-      "caffeine": 10,
-      "coding": 50,
-      "wetLab": 75,
-      "clinical": 80,
+      "caffeine": 5,
+      "coding": 40,
+      "wetLab": 80,
+      "clinical": 50,
       "ankiConsistency": 15
     },
     "statLabels": {
@@ -291,7 +312,10 @@ export const COHORT_DATA: CohortMember[] = [
     "imagePosition": "50.00% 24.06%",
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/premier-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/417.gif",
-    "hometown": "DE"
+    "hometown": "DE",
+    "typeColors": {
+      "type1": "#9628bd"
+    }
   },
   {
     "id": "007",
@@ -411,7 +435,10 @@ export const COHORT_DATA: CohortMember[] = [
     ],
     "galleryImagePositions": [
       "58.86% 50.00%"
-    ]
+    ],
+    "typeColors": {
+      "type1": "#00ccc9"
+    }
   },
   {
     "id": "010",
@@ -449,13 +476,16 @@ export const COHORT_DATA: CohortMember[] = [
     "imagePosition": "center",
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dusk-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/216.gif",
-    "hometown": "TX"
+    "hometown": "TX",
+    "typeColors": {
+      "type2": "#ffade0"
+    }
   },
   {
     "id": "011",
     "name": "Dennis Zhang",
     "type1": "Host-Microbe",
-    "type2": "Dermatology",
+    "type2": "Dermatology?",
     "moves": [
       "Explosive Brew",
       "Pipet Tip Archery",
@@ -485,10 +515,25 @@ export const COHORT_DATA: CohortMember[] = [
       "ankiConsistency": "Anki"
     },
     "imageUrl": "/images/011.jpg",
-    "imagePosition": "100.00% 38.58%",
+    "imagePosition": "57.06% 38.58%",
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heavy-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/172.gif",
-    "hometown": "Hillsborough, NJ"
+    "hometown": "Hillsborough, NJ",
+    "galleryImages": [
+      "/images/011-gallery-1.jpg",
+      "/images/011-gallery-2.jpg",
+      "/images/011-gallery-3.jpg",
+      "/images/011-gallery-4.jpg"
+    ],
+    "galleryImagePositions": [
+      "2.68% 50.00%",
+      "50.00% 100.00%",
+      "53.00% 50.00%",
+      "69.20% 50.00%"
+    ],
+    "typeColors": {
+      "type2": "#ffc800"
+    }
   },
   {
     "id": "012",

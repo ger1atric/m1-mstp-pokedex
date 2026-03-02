@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform } from 'motion/react';
-import { X, Zap, Code, FlaskConical, Stethoscope, Shield, Monitor, FileText, Settings, Circle, Edit3, Save, Upload, Info } from 'lucide-react';
+import { X, Zap, Code, FlaskConical, Stethoscope, Shield, Monitor, FileText, Settings, Circle, Edit3, Save, Upload, Info, Eye, EyeOff } from 'lucide-react';
 import { CohortMember } from '../data/cohort';
 import { cn } from '../lib/utils';
 import { getTypeColor } from '../lib/colors';
@@ -299,8 +299,22 @@ export const PokedexModal: React.FC<PokedexModalProps> = ({ member, canEdit, onC
               </h2>
             </div>
             <div className="flex gap-2 items-center">
+              {canEdit && isEditing && (
+                <button
+                  onClick={() => handleChange('hidden', !editedMember.hidden)}
+                  className={cn(
+                    "flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-xs uppercase transition-all border-2",
+                    editedMember.hidden
+                      ? "bg-zinc-800 text-white border-zinc-800 hover:bg-zinc-700"
+                      : "bg-white text-zinc-500 border-zinc-200 hover:bg-zinc-50"
+                  )}
+                  title={editedMember.hidden ? "Hidden from directory" : "Visible in directory"}
+                >
+                  {editedMember.hidden ? <><EyeOff className="w-4 h-4" /> Hidden</> : <><Eye className="w-4 h-4" /> Visible</>}
+                </button>
+              )}
               {canEdit && (
-                <button 
+                <button
                   onClick={() => isEditing ? handleSave() : setIsEditing(true)}
                   className={cn(
                     "flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-xs uppercase transition-all",

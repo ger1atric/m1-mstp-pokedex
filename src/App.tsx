@@ -41,7 +41,7 @@ export default function App() {
     }
   });
   const [selectedMember, setSelectedMember] = useState<CohortMember | null>(null);
-  const [canEdit, setCanEdit] = useState(true);
+  const [canEdit, setCanEdit] = useState(false);
   const [isModalEditing, setIsModalEditing] = useState(false);
   const [draggedId, setDraggedId] = useState<string | null>(null);
   const [dragOverId, setDragOverId] = useState<string | null>(null);
@@ -194,20 +194,23 @@ export default function App() {
               />
             </div>
             <div className="flex flex-col">
-              <h1 className="font-pixel text-xs md:text-sm tracking-tighter text-white drop-shadow-md uppercase">MSTP M1 Cohort</h1>
+              <h1 className="font-pixel text-xs md:text-sm tracking-tighter text-white drop-shadow-md uppercase">MSTP M1 Pokedex</h1>
               <p className="text-[10px] text-white/70 font-bold uppercase tracking-widest mt-0.5">Gotta Research 'Em All</p>
             </div>
           </div>
 
-          <div className="hidden md:flex items-center gap-4">
-            <div className="bg-black/20 px-4 py-2 rounded-lg border border-white/10 flex items-center gap-3">
-              <img 
-                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" 
-                alt="Pikachu" 
-                className="w-12 h-12 -my-2"
-                referrerPolicy="no-referrer"
-              />
-              <span className="font-pixel text-[8px] text-white/80 uppercase">Cohort Size: {cohort.length}</span>
+          <div className="hidden md:flex items-center">
+            <div className="flex items-end gap-0.5">
+              {cohort.filter(m => !m.hidden).map(member => (
+                <img
+                  key={member.id}
+                  src={member.spriteUrl}
+                  alt={member.name}
+                  title={member.name}
+                  className="w-10 h-10 -mb-1"
+                  referrerPolicy="no-referrer"
+                />
+              ))}
             </div>
           </div>
         </div>
@@ -216,7 +219,7 @@ export default function App() {
       <main className="max-w-7xl mx-auto px-4 py-12">
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {cohort.map((member) => (
+          {(canEdit ? cohort : cohort.filter(m => !m.hidden)).map((member) => (
             <div
               key={member.id}
               draggable={canEdit}
@@ -226,10 +229,11 @@ export default function App() {
               onDrop={(e) => handleDrop(e, member.id)}
               onDragEnd={handleDragEnd}
               className={cn(
-                "transition-all duration-150 rounded-2xl",
+                "relative transition-all duration-150 rounded-2xl",
                 canEdit && "cursor-grab active:cursor-grabbing",
                 draggedId === member.id && "opacity-30 scale-95",
                 dragOverId === member.id && draggedId !== member.id && "ring-4 ring-pokedex-red ring-offset-4 scale-[1.02]",
+                canEdit && member.hidden && "opacity-50",
               )}
             >
               <PokedexCard
@@ -239,6 +243,13 @@ export default function App() {
                   setSelectedMember(member);
                 }}
               />
+              {canEdit && member.hidden && (
+                <div className="absolute inset-0 rounded-2xl flex items-center justify-center pointer-events-none">
+                  <span className="bg-zinc-900/80 text-white font-pixel text-[10px] uppercase tracking-widest px-3 py-1.5 rounded-full">
+                    Hidden
+                  </span>
+                </div>
+              )}
             </div>
           ))}
         </div>

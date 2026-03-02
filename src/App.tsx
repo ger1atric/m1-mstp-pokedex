@@ -58,15 +58,16 @@ export default function App() {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!selectedMember || isModalEditing) return;
 
-      const currentIndex = cohort.findIndex(m => m.id === selectedMember.id);
+      const navigable = canEdit ? cohort : cohort.filter(m => !m.hidden);
+      const currentIndex = navigable.findIndex(m => m.id === selectedMember.id);
       if (currentIndex === -1) return;
 
       if (e.key === 'ArrowRight') {
-        const nextIndex = (currentIndex + 1) % cohort.length;
-        setSelectedMember(cohort[nextIndex]);
+        const nextIndex = (currentIndex + 1) % navigable.length;
+        setSelectedMember(navigable[nextIndex]);
       } else if (e.key === 'ArrowLeft') {
-        const prevIndex = (currentIndex - 1 + cohort.length) % cohort.length;
-        setSelectedMember(cohort[prevIndex]);
+        const prevIndex = (currentIndex - 1 + navigable.length) % navigable.length;
+        setSelectedMember(navigable[prevIndex]);
       } else if (e.key === 'Escape') {
         setSelectedMember(null);
       }
@@ -74,7 +75,7 @@ export default function App() {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [selectedMember, cohort]);
+  }, [selectedMember, cohort, canEdit, isModalEditing]);
 
   const handleUpdateMember = (updatedMember: CohortMember) => {
     setCohort(prev => prev.map(m => m.id === updatedMember.id ? updatedMember : m));
@@ -289,7 +290,7 @@ export default function App() {
               <span className="text-zinc-500 font-pixel text-[8px]">M1 Class</span>
             </div>
             <div className="text-[10px] text-pokedex-blue font-black uppercase tracking-[0.2em] flex items-center gap-4">
-              <span>© 1996-2026 Pokémon / MSTP</span>
+              <span>Stanford MSTP Entering Class of 2025</span>
               <button 
                 onClick={() => setCanEdit(!canEdit)}
                 className="w-2 h-2 rounded-full bg-zinc-800 hover:bg-zinc-700 transition-colors"

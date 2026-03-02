@@ -38,7 +38,7 @@ export interface CohortMember {
 
 // Bump this version whenever you run scripts/import-cohort.mjs and push to Vercel.
 // The app will automatically clear stale localStorage on any browser that has an older version.
-export const COHORT_VERSION = "2026-03-02.0419";
+export const COHORT_VERSION = "2026-03-02.0430";
 
 export const COHORT_DATA: CohortMember[] = [
   {
@@ -517,7 +517,7 @@ export const COHORT_DATA: CohortMember[] = [
       "Watching Horror Movies"
     ],
     "description": "You can spot Daria planking for longer than Oren, in her car blasting Mitski and Japanese Breakfast, or giggling with Jon in the back of the lecture hall",
-    "cardDescription": "Somewhere between Dr. Frankenstein and his monster",
+    "cardDescription": "Vampire",
     "stats": {
       "caffeine": 99,
       "coding": 54,

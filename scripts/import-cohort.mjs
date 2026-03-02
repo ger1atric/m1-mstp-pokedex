@@ -37,11 +37,19 @@ if (dataStart === -1) {
   process.exit(1);
 }
 
-const header = existing.substring(0, dataStart);
+// Auto-generate a new version from the current timestamp
+const newVersion = new Date().toISOString().slice(0, 16).replace('T', '.').replace(':', '');
+
+// Replace the COHORT_VERSION line in the header, or insert it if missing
+const headerWithVersion = header.includes('export const COHORT_VERSION')
+  ? header.replace(/export const COHORT_VERSION = ".*?"/, `export const COHORT_VERSION = "${newVersion}"`)
+  : header;
+
 const dataStr = `export const COHORT_DATA: CohortMember[] = ${JSON.stringify(data, null, 2)};\n`;
 
-fs.writeFileSync(COHORT_FILE, header + dataStr);
+fs.writeFileSync(COHORT_FILE, headerWithVersion + dataStr);
 console.log(`✅ cohort.ts updated with ${data.length} members from ${path.basename(exportFile)}`);
+console.log(`🔖 Version bumped to: ${newVersion} (stale localStorage on Vercel will auto-clear)`);
 
 // Remind about images
 const imageRefs = data.flatMap(m => [

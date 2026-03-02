@@ -35,6 +35,10 @@ export interface CohortMember {
   hometown: string;
 }
 
+// Bump this version whenever you run scripts/import-cohort.mjs and push to Vercel.
+// The app will automatically clear stale localStorage on any browser that has an older version.
+export const COHORT_VERSION = "1.0.0";
+
 export const COHORT_DATA: CohortMember[] = [
   {
     "id": "001",

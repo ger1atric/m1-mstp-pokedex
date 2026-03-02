@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Search, Filter, Info, Github, Download } from 'lucide-react';
 import JSZip from 'jszip';
-import { COHORT_DATA, CohortMember } from './data/cohort';
+import { COHORT_DATA, COHORT_VERSION, CohortMember } from './data/cohort';
 import { PokedexCard } from './components/PokedexCard';
 import { PokedexModal } from './components/PokedexModal';
 
@@ -10,19 +10,29 @@ export default function App() {
   const [cohort, setCohort] = useState<CohortMember[]>(() => {
     const saved = localStorage.getItem('mstp_cohort_data');
     if (!saved) return COHORT_DATA;
-    
+
+    // If a stored version exists and doesn't match the deployed version,
+    // clear stale localStorage and use fresh cohort.ts data.
+    // If no version is stored yet (pre-versioning data), leave it untouched.
+    const savedVersion = localStorage.getItem('mstp_cohort_version');
+    if (savedVersion && savedVersion !== COHORT_VERSION) {
+      localStorage.removeItem('mstp_cohort_data');
+      localStorage.removeItem('mstp_cohort_version');
+      return COHORT_DATA;
+    }
+
     try {
       const parsedSaved = JSON.parse(saved) as CohortMember[];
       // Merge: Keep saved edits for existing members, but add any new members from COHORT_DATA
       const merged = [...parsedSaved];
-      
+
       COHORT_DATA.forEach(defaultMember => {
         const exists = merged.some(m => m.id === defaultMember.id);
         if (!exists) {
           merged.push(defaultMember);
         }
       });
-      
+
       // Sort by ID to keep order consistent
       return merged.sort((a, b) => parseInt(a.id) - parseInt(b.id));
     } catch (e) {
@@ -36,6 +46,7 @@ export default function App() {
 
   useEffect(() => {
     localStorage.setItem('mstp_cohort_data', JSON.stringify(cohort));
+    localStorage.setItem('mstp_cohort_version', COHORT_VERSION);
   }, [cohort]);
 
   useEffect(() => {

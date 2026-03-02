@@ -186,7 +186,9 @@
     "typeColors": {
       "type1": "#efa9f4",
       "type2": "#ff0505"
-    }
+    },
+    "galleryImages": [],
+    "galleryImagePositions": []
   },
   {
     "id": "005",

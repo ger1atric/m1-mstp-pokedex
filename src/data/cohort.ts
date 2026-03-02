@@ -38,14 +38,14 @@ export interface CohortMember {
 
 // Bump this version whenever you run scripts/import-cohort.mjs and push to Vercel.
 // The app will automatically clear stale localStorage on any browser that has an older version.
-export const COHORT_VERSION = "2026-03-02.0354";
+export const COHORT_VERSION = "2026-03-02.0356";
 
 export const COHORT_DATA: CohortMember[] = [
   {
     "id": "001",
     "name": "Jerry Shen",
-    "type1": "Immunology",
-    "type2": "ENT",
+    "type1": "Immunology/Comp Bio",
+    "type2": "ENT/IM",
     "moves": [
       "Critical Analysis",
       "Photo Flash",
@@ -98,22 +98,21 @@ export const COHORT_DATA: CohortMember[] = [
   {
     "id": "011",
     "name": "Dennis Zhang",
-    "type1": "Host-Microbe/Genetics",
-    "type2": "Derm/ENT/IM",
+    "type1": "Host-Microbe",
+    "type2": "Derm??",
     "moves": [
-      "Explosive Brew",
+      "Booch-splosion",
       "Pipet Tip Archery",
       "\"Strava\" It"
     ],
     "specialAttack": "Dennis the Menace",
     "hobbies": [
-      "Brewing Kombucha",
-      "Playing Guitar",
-      "Learning to DJ",
+      "Kombucha",
+      "Guitar",
       "Physical Exertion"
     ],
-    "description": "When Dennis isn’t optimizing his dorm-room kombucha brewing setup, he’s likely raving about Denmark or vigorously exercising -- by any means necessary.",
-    "cardDescription": "Fizz Whiz",
+    "description": "When he isn't brewing kombucha, Dennis is likely planning his return to Denmark... or vigorously exercising (by any means necessary).",
+    "cardDescription": "Booch Bro",
     "stats": {
       "caffeine": 50,
       "coding": 50,
@@ -143,7 +142,7 @@ export const COHORT_DATA: CohortMember[] = [
       "2.68% 50.00%",
       "50.00% 100.00%",
       "53.00% 50.00%",
-      "69.20% 50.00%"
+      "57.89% 50.00%"
     ],
     "typeColors": {
       "type2": "#ffc800"
@@ -155,11 +154,11 @@ export const COHORT_DATA: CohortMember[] = [
     "type1": "Synthetic Bio",
     "type2": "Oncology",
     "moves": [
-      "Sculpt & Structure",
+      "Yoga Sculpter",
       "Dog-dependent Dopamine",
-      "Catalytic Efficiency"
+      "Read CNS"
     ],
-    "specialAttack": "Golden Hour Recharge",
+    "specialAttack": "Bagel Recharge",
     "hobbies": [
       "Yoga",
       "Ski",
@@ -308,7 +307,7 @@ export const COHORT_DATA: CohortMember[] = [
     "id": "002",
     "name": "Sidra Xu",
     "type1": "Materials & Dev",
-    "type2": "General Surgery",
+    "type2": "Gen Surg/Psych",
     "moves": [
       "Night Owl",
       "Dirac Efficiency",
@@ -402,6 +401,203 @@ export const COHORT_DATA: CohortMember[] = [
     ]
   },
   {
+    "id": "007",
+    "name": "Saradha Miriyala",
+    "type1": "Developmental Biology",
+    "type2": "PCCM",
+    "moves": [
+      "Inside Scoop",
+      "Brown Squared",
+      "Bagel Purist "
+    ],
+    "specialAttack": "Miffy Enthusiast",
+    "hobbies": [
+      "Making Matcha/Espresso Drinks",
+      "Pottery",
+      "Needlework",
+      "Longform Podcasts",
+      "Philly Eagles"
+    ],
+    "description": "When Saradha is not in the confocal room, you can find her risking her life chasing Facebook Marketplace deals",
+    "cardDescription": "Matcha Mommy",
+    "stats": {
+      "caffeine": 90,
+      "coding": 40,
+      "wetLab": 75,
+      "clinical": 50,
+      "ankiConsistency": 75
+    },
+    "statLabels": {
+      "caffeine": "Caffeine",
+      "coding": "Coding",
+      "wetLab": "Wet Lab",
+      "clinical": "Clinical",
+      "ankiConsistency": "Anki"
+    },
+    "imageUrl": "/images/007.jpg",
+    "imagePosition": "50.00% 72.03%",
+    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/timer-ball.png",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/7.gif",
+    "hometown": "Plainsboro, NJ",
+    "galleryImages": [
+      "/images/007-gallery-1.jpg",
+      "/images/007-gallery-2.jpg",
+      "/images/007-gallery-3.jpg",
+      "/images/007-gallery-4.jpg"
+    ]
+  },
+  {
+    "id": "012",
+    "name": "Jon Musai",
+    "type1": "Immunology",
+    "type2": "Rheumatology/ID",
+    "moves": [
+      "Tony Spumoni",
+      "Town Crier  ",
+      "Divergent Trilogy"
+    ],
+    "specialAttack": "Diet Pepsi",
+    "hobbies": [
+      "Soccer",
+      "Cooking and Eating Food"
+    ],
+    "description": "When Jon is not giggling in the back of class, you can find him eating Trader Joe's corn chips in bed. ",
+    "cardDescription": "The Albanian Prince",
+    "stats": {
+      "caffeine": 90,
+      "coding": 10,
+      "wetLab": 70,
+      "clinical": 20,
+      "ankiConsistency": 20
+    },
+    "statLabels": {
+      "caffeine": "Caffeine",
+      "coding": "Coding",
+      "wetLab": "Wet Lab",
+      "clinical": "Clinical",
+      "ankiConsistency": "Anki"
+    },
+    "imageUrl": "/images/012.jpg",
+    "imagePosition": "100.00% 27.73%",
+    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/luxury-ball.png",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/133.gif",
+    "hometown": "Canton, MI",
+    "galleryImages": [
+      "/images/012-gallery-1.jpg",
+      "/images/012-gallery-2.jpg",
+      "/images/012-gallery-3.jpg"
+    ],
+    "galleryImagePositions": [
+      "50.00% 58.23%",
+      "50.00% 100.00%",
+      "47.87% 50.00%"
+    ]
+  },
+  {
+    "id": "009",
+    "name": "Daria Azizad",
+    "type1": "Stem Cell/Reg. Med.",
+    "type2": "Neurology",
+    "moves": [
+      "Pilates Pulse ",
+      "Pickleball Pro",
+      "Neo-Luddite"
+    ],
+    "specialAttack": "PhD in Astrology",
+    "hobbies": [
+      "Reading Postmodern Lit",
+      "Wearing Sunglasses Indoors",
+      "Watching Horror Movies"
+    ],
+    "description": "You can spot Daria planking for longer than Oren, in her car blasting Mitski and Japanese Breakfast, or giggling with Jon in the back of the lecture hall",
+    "cardDescription": "Somewhere between Dr. Frankenstein and his monster",
+    "stats": {
+      "caffeine": 99,
+      "coding": 54,
+      "wetLab": 73,
+      "clinical": 24,
+      "ankiConsistency": 12
+    },
+    "statLabels": {
+      "caffeine": "Caffeine",
+      "coding": "Coding",
+      "wetLab": "Wet Lab",
+      "clinical": "Clinical",
+      "ankiConsistency": "Anki"
+    },
+    "imageUrl": "/images/009.jpg",
+    "imagePosition": "50.00% 100.00%",
+    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heal-ball.png",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/113.gif",
+    "hometown": "Thousand Oaks, CA",
+    "galleryImages": [
+      "/images/009-gallery-1.jpg",
+      "/images/009-gallery-2.jpg",
+      "/images/009-gallery-3.jpg"
+    ],
+    "galleryImagePositions": [],
+    "typeColors": {
+      "type1": "#00ccc9"
+    }
+  },
+  {
+    "id": "006",
+    "name": "Aravind Krishnan",
+    "type1": "Immunology/Cancer Bio",
+    "type2": "Peds/Critical Care",
+    "moves": [
+      "Shooting Hoops ",
+      "Disc Thrower",
+      "Outdoor Explorer"
+    ],
+    "specialAttack": "Gardener",
+    "hobbies": [
+      "Basketball",
+      "Frisbee",
+      "Hiking",
+      "Biking",
+      "Lifting",
+      "Reading"
+    ],
+    "description": "When Aravind is not thinking about immune cell engineering, he is likely outside jumping: to catch a frisbee, to shoot a basketball, or to traverse some challenging terrain on a hike.",
+    "cardDescription": "Sharp Shooter",
+    "stats": {
+      "caffeine": 10,
+      "coding": 40,
+      "wetLab": 85,
+      "clinical": 50,
+      "ankiConsistency": 25
+    },
+    "statLabels": {
+      "caffeine": "Caffeine",
+      "coding": "Coding",
+      "wetLab": "Wet Lab",
+      "clinical": "Clinical",
+      "ankiConsistency": "Anki"
+    },
+    "imageUrl": "/images/006.jpg",
+    "imagePosition": "100.00% 24.06%",
+    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/premier-ball.png",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/417.gif",
+    "hometown": "Hillsborough, NJ",
+    "typeColors": {
+      "type1": "#9628bd"
+    },
+    "galleryImages": [
+      "/images/006-gallery-1.jpg",
+      "/images/006-gallery-2.jpg",
+      "/images/006-gallery-3.jpg",
+      "/images/006-gallery-4.jpg",
+      "/images/006-gallery-5.jpg"
+    ],
+    "galleryImagePositions": [
+      "50.00% 80.86%",
+      "46.54% 50.00%",
+      "12.66% 50.00%",
+      "13.31% 50.00%"
+    ]
+  },
+  {
     "id": "008",
     "name": "Desmond Edwards",
     "type1": "Immunology",
@@ -440,158 +636,7 @@ export const COHORT_DATA: CohortMember[] = [
     "hometown": "St Mary, Jamaica",
     "typeColors": {
       "type1": "#bb28bd"
-    }
-  },
-  {
-    "id": "006",
-    "name": "Aravind Krishnan",
-    "type1": "",
-    "type2": "",
-    "moves": [
-      " ",
-      " ",
-      " "
-    ],
-    "specialAttack": " ",
-    "hobbies": [
-      ""
-    ],
-    "description": "",
-    "cardDescription": "",
-    "stats": {
-      "caffeine": 0,
-      "coding": 0,
-      "wetLab": 0,
-      "clinical": 0,
-      "ankiConsistency": 0
     },
-    "statLabels": {
-      "caffeine": "Caffeine",
-      "coding": "Coding",
-      "wetLab": "Wet Lab",
-      "clinical": "Clinical",
-      "ankiConsistency": "Anki"
-    },
-    "imageUrl": "/images/006.jpg",
-    "imagePosition": "50.00% 24.06%",
-    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/premier-ball.png",
-    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/417.gif",
-    "hometown": "",
-    "typeColors": {
-      "type1": "#9628bd"
-    }
-  },
-  {
-    "id": "007",
-    "name": "Saradha Miriyala",
-    "type1": "",
-    "type2": "",
-    "moves": [
-      " ",
-      " ",
-      " "
-    ],
-    "specialAttack": " ",
-    "hobbies": [
-      ""
-    ],
-    "description": "",
-    "cardDescription": "",
-    "stats": {
-      "caffeine": 0,
-      "coding": 0,
-      "wetLab": 0,
-      "clinical": 0,
-      "ankiConsistency": 0
-    },
-    "statLabels": {
-      "caffeine": "Caffeine",
-      "coding": "Coding",
-      "wetLab": "Wet Lab",
-      "clinical": "Clinical",
-      "ankiConsistency": "Anki"
-    },
-    "imageUrl": "/images/007.jpg",
-    "imagePosition": "50.00% 35.56%",
-    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/timer-ball.png",
-    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/7.gif",
-    "hometown": ""
-  },
-  {
-    "id": "009",
-    "name": "Daria Azizad",
-    "type1": "",
-    "type2": "",
-    "moves": [
-      " ",
-      " ",
-      " "
-    ],
-    "specialAttack": " ",
-    "hobbies": [
-      ""
-    ],
-    "description": "",
-    "cardDescription": "",
-    "stats": {
-      "caffeine": 0,
-      "coding": 0,
-      "wetLab": 0,
-      "clinical": 0,
-      "ankiConsistency": 0
-    },
-    "statLabels": {
-      "caffeine": "Caffeine",
-      "coding": "Coding",
-      "wetLab": "Wet Lab",
-      "clinical": "Clinical",
-      "ankiConsistency": "Anki"
-    },
-    "imageUrl": "/images/009.jpg",
-    "imagePosition": "50.00% 25.06%",
-    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heal-ball.png",
-    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/113.gif",
-    "hometown": "",
-    "galleryImages": [],
-    "galleryImagePositions": [],
-    "typeColors": {
-      "type1": "#00ccc9"
-    }
-  },
-  {
-    "id": "012",
-    "name": "Jon Musai",
-    "type1": "",
-    "type2": "",
-    "moves": [
-      " ",
-      "  ",
-      " "
-    ],
-    "specialAttack": " ",
-    "hobbies": [
-      ""
-    ],
-    "description": "",
-    "cardDescription": "",
-    "stats": {
-      "caffeine": 0,
-      "coding": 0,
-      "wetLab": 0,
-      "clinical": 0,
-      "ankiConsistency": 0
-    },
-    "statLabels": {
-      "caffeine": "Caffeine",
-      "coding": "Coding",
-      "wetLab": "Wet Lab",
-      "clinical": "Clinical",
-      "ankiConsistency": "Anki"
-    },
-    "imageUrl": "/images/012.jpg",
-    "imagePosition": "50.00% 27.73%",
-    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/luxury-ball.png",
-    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/133.gif",
-    "hometown": ""
+    "hidden": true
   }
 ];

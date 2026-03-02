@@ -55,27 +55,26 @@
   {
     "id": "002",
     "name": "Sidra Xu",
-    "type1": "Bioengineering",
+    "type1": "Materials & Dev",
     "type2": "General Surgery",
     "moves": [
-      "CRISPR Cut",
-      "Gene Silencing",
-      "Immune Surge"
+      "Night Owl",
+      "Dirac Efficiency",
+      "Stage Hand"
     ],
-    "specialAttack": "Epigenetic Remodel",
+    "specialAttack": "Bakery Hopping",
     "hobbies": [
-      "Baking",
-      "Hiking",
-      "Sci-Fi Novels"
+      "Stage design",
+      "Baking"
     ],
-    "description": "Can design a guide RNA in their sleep. Jordan's sourdough starter is technically a genetically modified organism at this point.",
-    "cardDescription": "Stanford might as well be home",
+    "description": "If Sidra is not doing TC at midnight, she’s probably in the theater tuning lights or scavenging for a late night croissant.",
+    "cardDescription": "Tweetie",
     "stats": {
-      "caffeine": 70,
-      "coding": 55,
-      "wetLab": 55,
-      "clinical": 80,
-      "ankiConsistency": 0
+      "caffeine": 90,
+      "coding": 90,
+      "wetLab": 30,
+      "clinical": 50,
+      "ankiConsistency": 5
     },
     "statLabels": {
       "caffeine": "Caffeine",
@@ -88,7 +87,15 @@
     "imagePosition": "center",
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/133.gif",
-    "hometown": "San Jose, CA"
+    "hometown": "San Jose, CA",
+    "galleryImages": [
+      "/images/002-gallery-1.jpg",
+      "/images/002-gallery-2.jpg"
+    ],
+    "galleryImagePositions": [
+      "50.00% 46.48%",
+      "50.00% 100.00%"
+    ]
   },
   {
     "id": "003",
@@ -148,14 +155,14 @@
   {
     "id": "004",
     "name": "Verina Leung",
-    "type1": "Cancer Neuroscience",
-    "type2": "Pediatrics",
+    "type1": "Cancer Neuro/Chem Bio",
+    "type2": "PEDS or NEUROSURG?",
     "moves": [
       "sTanford imposter ",
       "Rodent Exterminator ",
       "Night Wanderer"
     ],
-    "specialAttack": "Brain Wave",
+    "specialAttack": "Neuro Surge",
     "hobbies": [
       "Thrifting/Antiquing",
       "Hiking",
@@ -184,7 +191,7 @@
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/39.gif",
     "hometown": "Honolulu, HI",
     "typeColors": {
-      "type1": "#efa9f4",
+      "type1": "#ea7df2",
       "type2": "#ff0505"
     },
     "galleryImages": [],
@@ -244,27 +251,25 @@
   {
     "id": "006",
     "name": "Aravind Krishnan",
-    "type1": "Immunology",
-    "type2": "Critical Care",
+    "type1": "",
+    "type2": "",
     "moves": [
-      "fMRI Scan",
-      "Neural Pulse",
-      "Mind Read"
+      " ",
+      " ",
+      " "
     ],
-    "specialAttack": "Behavioral Loop",
+    "specialAttack": " ",
     "hobbies": [
-      "Painting",
-      "Yoga",
-      "Surfing"
+      ""
     ],
-    "description": "Riley can tell you what you're thinking just by looking at your BOLD signal. They find peace in the waves and on the canvas.",
-    "cardDescription": "Where's Sean?",
+    "description": "",
+    "cardDescription": "",
     "stats": {
-      "caffeine": 5,
-      "coding": 40,
-      "wetLab": 80,
-      "clinical": 50,
-      "ankiConsistency": 15
+      "caffeine": 0,
+      "coding": 0,
+      "wetLab": 0,
+      "clinical": 0,
+      "ankiConsistency": 0
     },
     "statLabels": {
       "caffeine": "Caffeine",
@@ -277,7 +282,7 @@
     "imagePosition": "50.00% 24.06%",
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/premier-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/417.gif",
-    "hometown": "DE",
+    "hometown": "",
     "typeColors": {
       "type1": "#9628bd"
     }
@@ -285,27 +290,25 @@
   {
     "id": "007",
     "name": "Saradha Miriyala",
-    "type1": "Dev Bio",
-    "type2": "Cardiology",
+    "type1": "",
+    "type2": "",
     "moves": [
-      "Nano-Delivery",
-      "Polymer Shield",
-      "Chemical Bond"
+      " ",
+      " ",
+      " "
     ],
-    "specialAttack": "Targeted Release",
+    "specialAttack": " ",
     "hobbies": [
-      "Sculpting",
-      "Biking",
-      "Coffee Roasting"
+      ""
     ],
-    "description": "Sam builds tiny robots to deliver medicine. They treat coffee roasting like a high-stakes chemical reaction.",
-    "cardDescription": "Drama Queen!",
+    "description": "",
+    "cardDescription": "",
     "stats": {
-      "caffeine": 30,
-      "coding": 50,
-      "wetLab": 85,
-      "clinical": 70,
-      "ankiConsistency": 20
+      "caffeine": 0,
+      "coding": 0,
+      "wetLab": 0,
+      "clinical": 0,
+      "ankiConsistency": 0
     },
     "statLabels": {
       "caffeine": "Caffeine",
@@ -318,12 +321,12 @@
     "imagePosition": "50.00% 35.56%",
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/timer-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/7.gif",
-    "hometown": "Portland, NJ"
+    "hometown": ""
   },
   {
     "id": "008",
     "name": "Desmond Edwards",
-    "type1": "Immuno",
+    "type1": "Immunology",
     "type2": "Infectious Disease?",
     "moves": [
       "Viral Vector",
@@ -339,11 +342,11 @@
     "description": "Jamie tracks viruses like a predator. When not in the BSL-3 lab, they're likely hitting bullseyes or high scores.",
     "cardDescription": "????",
     "stats": {
-      "caffeine": 65,
-      "coding": 100,
-      "wetLab": 100,
-      "clinical": 85,
-      "ankiConsistency": 15
+      "caffeine": 5,
+      "coding": 75,
+      "wetLab": 75,
+      "clinical": 60,
+      "ankiConsistency": 5
     },
     "statLabels": {
       "caffeine": "Caffeine",
@@ -356,32 +359,33 @@
     "imagePosition": "43.13% 50.00%",
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/quick-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif",
-    "hometown": "St Mary, Jamaica"
+    "hometown": "St Mary, Jamaica",
+    "typeColors": {
+      "type1": "#bb28bd"
+    }
   },
   {
     "id": "009",
     "name": "Daria Azizad",
-    "type1": "Neuroscience",
-    "type2": "Neurology",
+    "type1": "",
+    "type2": "",
     "moves": [
-      "Tumor Target",
-      "T-Cell Surge",
-      "Gene Map"
+      " ",
+      " ",
+      " "
     ],
-    "specialAttack": "Precision Strike",
+    "specialAttack": " ",
     "hobbies": [
-      "Gardening",
-      "Reading",
-      "Swimming"
+      ""
     ],
-    "description": "Peyton is on a mission to personalize cancer care. They find metaphors for cell growth in their prize-winning roses.",
-    "cardDescription": "Bring the spice (but not the gluten)!",
+    "description": "",
+    "cardDescription": "",
     "stats": {
-      "caffeine": 65,
-      "coding": 80,
-      "wetLab": 85,
-      "clinical": 90,
-      "ankiConsistency": 75
+      "caffeine": 0,
+      "coding": 0,
+      "wetLab": 0,
+      "clinical": 0,
+      "ankiConsistency": 0
     },
     "statLabels": {
       "caffeine": "Caffeine",
@@ -394,7 +398,7 @@
     "imagePosition": "50.00% 25.06%",
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heal-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/113.gif",
-    "hometown": "Los Angeles, CA",
+    "hometown": "",
     "galleryImages": [
       "/images/009-gallery-1.jpg"
     ],
@@ -408,27 +412,25 @@
   {
     "id": "010",
     "name": "Charu Balamurugan",
-    "type1": "Genetics",
-    "type2": "Pediatrics",
+    "type1": "",
+    "type2": "",
     "moves": [
-      "Insulin Spike",
-      "Lipid Burn",
-      "Hormone Wave"
+      " ",
+      " ",
+      " "
     ],
-    "specialAttack": "Metabolic Reset",
+    "specialAttack": " ",
     "hobbies": [
-      "Hiking",
-      "Photography",
-      "Star Gazing"
+      ""
     ],
-    "description": "Dakota understands the body's fuel like no one else. They spend their nights looking at galaxies and their days at glucose levels.",
-    "cardDescription": "????",
+    "description": "",
+    "cardDescription": "",
     "stats": {
-      "caffeine": 40,
-      "coding": 55,
-      "wetLab": 90,
-      "clinical": 85,
-      "ankiConsistency": 60
+      "caffeine": 0,
+      "coding": 0,
+      "wetLab": 0,
+      "clinical": 0,
+      "ankiConsistency": 0
     },
     "statLabels": {
       "caffeine": "Caffeine",
@@ -441,7 +443,7 @@
     "imagePosition": "center",
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dusk-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/216.gif",
-    "hometown": "TX",
+    "hometown": "",
     "typeColors": {
       "type2": "#ffade0"
     }
@@ -449,8 +451,8 @@
   {
     "id": "011",
     "name": "Dennis Zhang",
-    "type1": "Host-Microbe",
-    "type2": "Dermatology?",
+    "type1": "Host-Microbe/Genetics",
+    "type2": "Derm/ENT/IM?",
     "moves": [
       "Explosive Brew",
       "Pipet Tip Archery",
@@ -503,27 +505,25 @@
   {
     "id": "012",
     "name": "Jon Musai",
-    "type1": "Immunology",
-    "type2": "Internal Medicine?",
+    "type1": "",
+    "type2": "",
     "moves": [
-      "Cytokine Storm",
-      "Phagocytosis",
-      "B-Cell Blast"
+      " ",
+      "  ",
+      " "
     ],
-    "specialAttack": "Antibody Cascade",
+    "specialAttack": " ",
     "hobbies": [
-      "Tennis",
-      "Cooking",
-      "Piano"
+      ""
     ],
-    "description": "Charlie is fascinated by the body's defense mechanisms. When not studying T-cells, they're likely perfecting a recipe or practicing a concerto.",
-    "cardDescription": "?????",
+    "description": "",
+    "cardDescription": "",
     "stats": {
-      "caffeine": 75,
-      "coding": 65,
-      "wetLab": 92,
-      "clinical": 70,
-      "ankiConsistency": 88
+      "caffeine": 0,
+      "coding": 0,
+      "wetLab": 0,
+      "clinical": 0,
+      "ankiConsistency": 0
     },
     "statLabels": {
       "caffeine": "Caffeine",
@@ -536,6 +536,6 @@
     "imagePosition": "50.00% 27.73%",
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/luxury-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/133.gif",
-    "hometown": "Ann Arbor, MI"
+    "hometown": ""
   }
 ]

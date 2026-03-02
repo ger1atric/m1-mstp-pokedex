@@ -20,7 +20,7 @@ export const PokedexCard: React.FC<PokedexCardProps> = ({ member, onClick }) => 
       className="relative group cursor-pointer"
     >
       <div className="relative bg-white border-4 border-zinc-200 rounded-2xl overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300">
-        <div className="aspect-square relative bg-zinc-100 overflow-hidden">
+        <div className="aspect-[3/4] relative bg-zinc-100 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-transparent z-10" />
           <img
             src={member.imageUrl}

@@ -12,10 +12,12 @@ export default function App() {
     const saved = localStorage.getItem('mstp_cohort_data');
     if (!saved) return COHORT_DATA;
 
-    // Clear stale localStorage if the version is missing or outdated.
-    // This ensures Vercel visitors always see the latest deployed data.
+    // Clear stale localStorage only when there's an explicit version mismatch.
+    // If no version is stored yet (pre-versioning data), leave it untouched
+    // so uploaded images aren't lost. Once the user runs export+import+push,
+    // the version gets set and future deploys will correctly invalidate Vercel caches.
     const savedVersion = localStorage.getItem('mstp_cohort_version');
-    if (!savedVersion || savedVersion !== COHORT_VERSION) {
+    if (savedVersion && savedVersion !== COHORT_VERSION) {
       localStorage.removeItem('mstp_cohort_data');
       localStorage.removeItem('mstp_cohort_version');
       return COHORT_DATA;

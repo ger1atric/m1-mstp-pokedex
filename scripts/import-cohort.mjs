@@ -37,6 +37,8 @@ if (dataStart === -1) {
   process.exit(1);
 }
 
+const header = existing.substring(0, dataStart);
+
 // Auto-generate a new version from the current timestamp
 const newVersion = new Date().toISOString().slice(0, 16).replace('T', '.').replace(':', '');
 

@@ -38,7 +38,7 @@ export interface CohortMember {
 
 // Bump this version whenever you run scripts/import-cohort.mjs and push to Vercel.
 // The app will automatically clear stale localStorage on any browser that has an older version.
-export const COHORT_VERSION = "2026-03-02.0407";
+export const COHORT_VERSION = "2026-03-02.0411";
 
 export const COHORT_DATA: CohortMember[] = [
   {
@@ -81,14 +81,15 @@ export const COHORT_DATA: CohortMember[] = [
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif",
     "hometown": "Boyds, MD",
     "galleryImages": [
-      "/images/001-gallery-1.jpg",
       "/images/001-gallery-2.jpg",
-      "/images/001-gallery-3.jpg"
+      "/images/001-gallery-3.jpg",
+      "/images/001-gallery-3.jpg",
+      "/images/001-gallery-4.jpg"
     ],
     "galleryImagePositions": [
-      "50.53% 50.00%",
       "50.00% 100.00%",
-      "39.11% 50.00%"
+      "39.11% 50.00%",
+      "50.00% 49.90%"
     ],
     "typeColors": {
       "type1": "#9628bd",

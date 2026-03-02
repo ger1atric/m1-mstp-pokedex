@@ -39,14 +39,15 @@
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif",
     "hometown": "Boyds, MD",
     "galleryImages": [
-      "/images/001-gallery-1.jpg",
       "/images/001-gallery-2.jpg",
-      "/images/001-gallery-3.jpg"
+      "/images/001-gallery-3.jpg",
+      "/images/001-gallery-3.jpg",
+      "/images/001-gallery-4.jpg"
     ],
     "galleryImagePositions": [
-      "50.53% 50.00%",
       "50.00% 100.00%",
-      "39.11% 50.00%"
+      "39.11% 50.00%",
+      "50.00% 49.90%"
     ],
     "typeColors": {
       "type1": "#9628bd",

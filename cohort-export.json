@@ -14,7 +14,8 @@
       "Birdwatching",
       "Photography",
       "Coffee-Brewing",
-      "Astronomy"
+      "Astronomy",
+      "Biking"
     ],
     "description": "When Jerry is not doing his Anki, you can often find him at night by the tennis courts shooting astrophotography or by Lake Lag looking for owls.",
     "cardDescription": "Bird Nerd",
@@ -33,7 +34,7 @@
       "ankiConsistency": "Anki"
     },
     "imageUrl": "/images/001.jpg",
-    "imagePosition": "100.00% 61.33%",
+    "imagePosition": "100.00% 98.62%",
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif",
     "hometown": "Boyds, MD",
@@ -53,28 +54,30 @@
     }
   },
   {
-    "id": "002",
-    "name": "Sidra Xu",
-    "type1": "Materials & Dev",
-    "type2": "General Surgery",
+    "id": "011",
+    "name": "Dennis Zhang",
+    "type1": "Host-Microbe/Genetics",
+    "type2": "Derm/ENT/IM",
     "moves": [
-      "Night Owl",
-      "Dirac Efficiency",
-      "Stage Hand"
+      "Explosive Brew",
+      "Pipet Tip Archery",
+      "\"Strava\" It"
     ],
-    "specialAttack": "Bakery Hopping",
+    "specialAttack": "Dennis the Menace",
     "hobbies": [
-      "Stage design",
-      "Baking"
+      "Brewing Kombucha",
+      "Playing Guitar",
+      "Learning to DJ",
+      "Physical Exertion"
     ],
-    "description": "If Sidra is not doing TC at midnight, she’s probably in the theater tuning lights or scavenging for a late night croissant.",
-    "cardDescription": "Tweetie",
+    "description": "When Dennis isn’t optimizing his dorm-room kombucha brewing setup, he’s likely raving about Denmark or vigorously exercising -- by any means necessary.",
+    "cardDescription": "Fizz Whiz",
     "stats": {
-      "caffeine": 90,
-      "coding": 90,
-      "wetLab": 30,
+      "caffeine": 50,
+      "coding": 50,
+      "wetLab": 80,
       "clinical": 50,
-      "ankiConsistency": 5
+      "ankiConsistency": 100
     },
     "statLabels": {
       "caffeine": "Caffeine",
@@ -83,19 +86,26 @@
       "clinical": "Clinical",
       "ankiConsistency": "Anki"
     },
-    "imageUrl": "/images/002.jpg",
-    "imagePosition": "center",
-    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png",
-    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/133.gif",
-    "hometown": "San Jose, CA",
+    "imageUrl": "/images/011.jpg",
+    "imagePosition": "57.06% 38.58%",
+    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heavy-ball.png",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/172.gif",
+    "hometown": "Hillsborough, NJ",
     "galleryImages": [
-      "/images/002-gallery-1.jpg",
-      "/images/002-gallery-2.jpg"
+      "/images/011-gallery-1.jpg",
+      "/images/011-gallery-2.jpg",
+      "/images/011-gallery-3.jpg",
+      "/images/011-gallery-4.jpg"
     ],
     "galleryImagePositions": [
-      "50.00% 46.48%",
-      "50.00% 100.00%"
-    ]
+      "2.68% 50.00%",
+      "50.00% 100.00%",
+      "53.00% 50.00%",
+      "69.20% 50.00%"
+    ],
+    "typeColors": {
+      "type2": "#ffc800"
+    }
   },
   {
     "id": "003",
@@ -153,51 +163,6 @@
     }
   },
   {
-    "id": "004",
-    "name": "Verina Leung",
-    "type1": "Cancer Neuro/Chem Bio",
-    "type2": "PEDS or NEUROSURG?",
-    "moves": [
-      "sTanford imposter ",
-      "Rodent Exterminator ",
-      "Night Wanderer"
-    ],
-    "specialAttack": "Neuro Surge",
-    "hobbies": [
-      "Thrifting/Antiquing",
-      "Hiking",
-      "Long-Night-Walks",
-      "Crafting"
-    ],
-    "description": "When Verina isn't responding to you, she likely has her noise-canceling earbuds in listening to her sister’s piano concertos on repeat or she’s on the phone catching up with her 91-year-old grandmother.",
-    "cardDescription": "Two Cuts",
-    "stats": {
-      "caffeine": 5,
-      "coding": 33,
-      "wetLab": 100,
-      "clinical": 40,
-      "ankiConsistency": 75
-    },
-    "statLabels": {
-      "caffeine": "Caffeine",
-      "coding": "Coding",
-      "wetLab": "Wet Lab",
-      "clinical": "Clinical",
-      "ankiConsistency": "Anki"
-    },
-    "imageUrl": "/images/004.jpg",
-    "imagePosition": "50.00% 86.23%",
-    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png",
-    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/39.gif",
-    "hometown": "Honolulu, HI",
-    "typeColors": {
-      "type1": "#ea7df2",
-      "type2": "#ff0505"
-    },
-    "galleryImages": [],
-    "galleryImagePositions": []
-  },
-  {
     "id": "005",
     "name": "Kenyon Weis",
     "type1": "Chem-Bio",
@@ -247,6 +212,193 @@
       "57.35% 50.00%",
       "50.00% 74.69%"
     ]
+  },
+  {
+    "id": "004",
+    "name": "Verina Leung",
+    "type1": "Cancer Neuro/Chem Bio",
+    "type2": "PEDS/NEUROSURG",
+    "moves": [
+      "sTanford imposter ",
+      "Rodent Exterminator ",
+      "Night Wanderer"
+    ],
+    "specialAttack": "Neuro Surge",
+    "hobbies": [
+      "Thrifting/Antiquing",
+      "Hiking",
+      "Long-Night-Walks",
+      "Crafting"
+    ],
+    "description": "When Verina isn't responding to you, she likely has her noise-canceling earbuds in listening to her sister’s piano concertos on repeat or she’s on the phone catching up with her 91-year-old grandmother.",
+    "cardDescription": "Two Cuts",
+    "stats": {
+      "caffeine": 5,
+      "coding": 33,
+      "wetLab": 100,
+      "clinical": 40,
+      "ankiConsistency": 75
+    },
+    "statLabels": {
+      "caffeine": "Caffeine",
+      "coding": "Coding",
+      "wetLab": "Wet Lab",
+      "clinical": "Clinical",
+      "ankiConsistency": "Anki"
+    },
+    "imageUrl": "/images/004.jpg",
+    "imagePosition": "50.00% 86.23%",
+    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/39.gif",
+    "hometown": "Honolulu, HI",
+    "typeColors": {
+      "type1": "#ea7df2",
+      "type2": "#ff0505"
+    },
+    "galleryImages": [
+      "/images/004-gallery-1.jpg"
+    ],
+    "galleryImagePositions": [
+      "50.00% 0.00%"
+    ]
+  },
+  {
+    "id": "002",
+    "name": "Sidra Xu",
+    "type1": "Materials & Dev",
+    "type2": "General Surgery",
+    "moves": [
+      "Night Owl",
+      "Dirac Efficiency",
+      "Stage Hand"
+    ],
+    "specialAttack": "Bakery Hopping",
+    "hobbies": [
+      "Stage design",
+      "Baking"
+    ],
+    "description": "If Sidra is not doing TC at midnight, she’s probably in the theater tuning lights or scavenging for a late night croissant.",
+    "cardDescription": "Tweetie",
+    "stats": {
+      "caffeine": 90,
+      "coding": 90,
+      "wetLab": 30,
+      "clinical": 50,
+      "ankiConsistency": 5
+    },
+    "statLabels": {
+      "caffeine": "Caffeine",
+      "coding": "Coding",
+      "wetLab": "Wet Lab",
+      "clinical": "Clinical",
+      "ankiConsistency": "Anki"
+    },
+    "imageUrl": "/images/002.jpg",
+    "imagePosition": "center",
+    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/133.gif",
+    "hometown": "San Jose, CA",
+    "galleryImages": [
+      "/images/002-gallery-1.jpg",
+      "/images/002-gallery-2.jpg"
+    ],
+    "galleryImagePositions": [
+      "50.00% 46.48%",
+      "50.00% 100.00%"
+    ]
+  },
+  {
+    "id": "010",
+    "name": "Charu Balamurugan",
+    "type1": "Functional Genomics",
+    "type2": "Pediatrics",
+    "moves": [
+      " Giggle Generator",
+      "Professional Yapper",
+      "Dancing Dynamo"
+    ],
+    "specialAttack": "\"LA Girl\"",
+    "hobbies": [
+      "Bharata Natyam",
+      "Foodie",
+      "Music & Wellness",
+      "Amateur Caligraphy"
+    ],
+    "description": "When Charu's not learning how to pipette, you can find her adding a new restaurant to her Beli, hitting the snooze button, dancing Bharata Natyam, or making mood playlists. ",
+    "cardDescription": "Food Mood",
+    "stats": {
+      "caffeine": 20,
+      "coding": 60,
+      "wetLab": 20,
+      "clinical": 70,
+      "ankiConsistency": 30
+    },
+    "statLabels": {
+      "caffeine": "Caffeine",
+      "coding": "Coding",
+      "wetLab": "Wet Lab",
+      "clinical": "Clinical",
+      "ankiConsistency": "Anki"
+    },
+    "imageUrl": "/images/010.jpg",
+    "imagePosition": "50.00% 44.87%",
+    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dusk-ball.png",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/216.gif",
+    "hometown": "Los Angeles, CA",
+    "typeColors": {
+      "type2": "#ffade0"
+    },
+    "galleryImages": [
+      "/images/010-gallery-1.jpg",
+      "/images/010-gallery-2.jpg",
+      "/images/010-gallery-3.jpg"
+    ],
+    "galleryImagePositions": [
+      "50.00% 0.00%",
+      "50.00% 51.29%",
+      "50.00% 22.35%"
+    ]
+  },
+  {
+    "id": "008",
+    "name": "Desmond Edwards",
+    "type1": "Immunology",
+    "type2": "Infectious Disease?",
+    "moves": [
+      "Viral Vector",
+      "Antibody Shield",
+      "Spike Bind"
+    ],
+    "specialAttack": "Vaccine Breakthrough",
+    "hobbies": [
+      "Archery",
+      "Gaming",
+      "Cooking"
+    ],
+    "description": "Jamie tracks viruses like a predator. When not in the BSL-3 lab, they're likely hitting bullseyes or high scores.",
+    "cardDescription": "????",
+    "stats": {
+      "caffeine": 5,
+      "coding": 75,
+      "wetLab": 75,
+      "clinical": 60,
+      "ankiConsistency": 5
+    },
+    "statLabels": {
+      "caffeine": "Caffeine",
+      "coding": "Coding",
+      "wetLab": "Wet Lab",
+      "clinical": "Clinical",
+      "ankiConsistency": "Anki"
+    },
+    "imageUrl": "/images/008.jpg",
+    "imagePosition": "52.26% 50.00%",
+    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/quick-ball.png",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif",
+    "hometown": "St Mary, Jamaica",
+    "typeColors": {
+      "type1": "#bb28bd"
+    }
   },
   {
     "id": "006",
@@ -324,47 +476,6 @@
     "hometown": ""
   },
   {
-    "id": "008",
-    "name": "Desmond Edwards",
-    "type1": "Immunology",
-    "type2": "Infectious Disease?",
-    "moves": [
-      "Viral Vector",
-      "Antibody Shield",
-      "Spike Bind"
-    ],
-    "specialAttack": "Vaccine Breakthrough",
-    "hobbies": [
-      "Archery",
-      "Gaming",
-      "Cooking"
-    ],
-    "description": "Jamie tracks viruses like a predator. When not in the BSL-3 lab, they're likely hitting bullseyes or high scores.",
-    "cardDescription": "????",
-    "stats": {
-      "caffeine": 5,
-      "coding": 75,
-      "wetLab": 75,
-      "clinical": 60,
-      "ankiConsistency": 5
-    },
-    "statLabels": {
-      "caffeine": "Caffeine",
-      "coding": "Coding",
-      "wetLab": "Wet Lab",
-      "clinical": "Clinical",
-      "ankiConsistency": "Anki"
-    },
-    "imageUrl": "/images/008.jpg",
-    "imagePosition": "43.13% 50.00%",
-    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/quick-ball.png",
-    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif",
-    "hometown": "St Mary, Jamaica",
-    "typeColors": {
-      "type1": "#bb28bd"
-    }
-  },
-  {
     "id": "009",
     "name": "Daria Azizad",
     "type1": "",
@@ -399,107 +510,10 @@
     "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heal-ball.png",
     "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/113.gif",
     "hometown": "",
-    "galleryImages": [
-      "/images/009-gallery-1.jpg"
-    ],
-    "galleryImagePositions": [
-      "58.86% 50.00%"
-    ],
+    "galleryImages": [],
+    "galleryImagePositions": [],
     "typeColors": {
       "type1": "#00ccc9"
-    }
-  },
-  {
-    "id": "010",
-    "name": "Charu Balamurugan",
-    "type1": "",
-    "type2": "",
-    "moves": [
-      " ",
-      " ",
-      " "
-    ],
-    "specialAttack": " ",
-    "hobbies": [
-      ""
-    ],
-    "description": "",
-    "cardDescription": "",
-    "stats": {
-      "caffeine": 0,
-      "coding": 0,
-      "wetLab": 0,
-      "clinical": 0,
-      "ankiConsistency": 0
-    },
-    "statLabels": {
-      "caffeine": "Caffeine",
-      "coding": "Coding",
-      "wetLab": "Wet Lab",
-      "clinical": "Clinical",
-      "ankiConsistency": "Anki"
-    },
-    "imageUrl": "/images/010.jpg",
-    "imagePosition": "center",
-    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dusk-ball.png",
-    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/216.gif",
-    "hometown": "",
-    "typeColors": {
-      "type2": "#ffade0"
-    }
-  },
-  {
-    "id": "011",
-    "name": "Dennis Zhang",
-    "type1": "Host-Microbe/Genetics",
-    "type2": "Derm/ENT/IM?",
-    "moves": [
-      "Explosive Brew",
-      "Pipet Tip Archery",
-      "\"Strava\" It"
-    ],
-    "specialAttack": "Dennis the Menace",
-    "hobbies": [
-      "Brewing Kombucha",
-      "Playing Guitar",
-      "Learning to DJ",
-      "Physical Exertion"
-    ],
-    "description": "When Dennis isn’t optimizing his dorm-room kombucha brewing setup, he’s likely raving about Denmark or vigorously exercising -- by any means necessary.",
-    "cardDescription": "Fizz Whiz",
-    "stats": {
-      "caffeine": 50,
-      "coding": 50,
-      "wetLab": 80,
-      "clinical": 50,
-      "ankiConsistency": 100
-    },
-    "statLabels": {
-      "caffeine": "Caffeine",
-      "coding": "Coding",
-      "wetLab": "Wet Lab",
-      "clinical": "Clinical",
-      "ankiConsistency": "Anki"
-    },
-    "imageUrl": "/images/011.jpg",
-    "imagePosition": "57.06% 38.58%",
-    "ballUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heavy-ball.png",
-    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/172.gif",
-    "hometown": "Hillsborough, NJ",
-    "galleryImages": [
-      "/images/011-gallery-1.jpg",
-      "/images/011-gallery-2.jpg",
-      "/images/011-gallery-3.jpg",
-      "/images/011-gallery-4.jpg"
-    ],
-    "galleryImagePositions": [
-      "2.68% 50.00%",
-      "50.00% 100.00%",
-      "53.00% 50.00%",
-      "69.20% 50.00%"
-    ],
-    "typeColors": {
-      "type2": "#ffc800"
     }
   },
   {

@@ -25,6 +25,7 @@ export const PokedexCard: React.FC<PokedexCardProps> = ({ member, onClick }) => 
           <img
             src={member.imageUrl}
             alt={member.name}
+            draggable={false}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             style={{ objectPosition: member.imagePosition || 'center' }}
             referrerPolicy="no-referrer"

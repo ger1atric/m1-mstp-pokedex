@@ -1,21 +1,21 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Search, Filter, Info, Github, Download } from 'lucide-react';
 import JSZip from 'jszip';
 import { COHORT_DATA, COHORT_VERSION, CohortMember } from './data/cohort';
 import { PokedexCard } from './components/PokedexCard';
 import { PokedexModal } from './components/PokedexModal';
+import { cn } from './lib/utils';
 
 export default function App() {
   const [cohort, setCohort] = useState<CohortMember[]>(() => {
     const saved = localStorage.getItem('mstp_cohort_data');
     if (!saved) return COHORT_DATA;
 
-    // If a stored version exists and doesn't match the deployed version,
-    // clear stale localStorage and use fresh cohort.ts data.
-    // If no version is stored yet (pre-versioning data), leave it untouched.
+    // Clear stale localStorage if the version is missing or outdated.
+    // This ensures Vercel visitors always see the latest deployed data.
     const savedVersion = localStorage.getItem('mstp_cohort_version');
-    if (savedVersion && savedVersion !== COHORT_VERSION) {
+    if (!savedVersion || savedVersion !== COHORT_VERSION) {
       localStorage.removeItem('mstp_cohort_data');
       localStorage.removeItem('mstp_cohort_version');
       return COHORT_DATA;
@@ -33,8 +33,8 @@ export default function App() {
         }
       });
 
-      // Sort by ID to keep order consistent
-      return merged.sort((a, b) => parseInt(a.id) - parseInt(b.id));
+      // Preserve saved order; new members are appended at the end
+      return merged;
     } catch (e) {
       console.error("Failed to parse saved cohort data", e);
       return COHORT_DATA;
@@ -43,6 +43,9 @@ export default function App() {
   const [selectedMember, setSelectedMember] = useState<CohortMember | null>(null);
   const [canEdit, setCanEdit] = useState(true);
   const [isModalEditing, setIsModalEditing] = useState(false);
+  const [draggedId, setDraggedId] = useState<string | null>(null);
+  const [dragOverId, setDragOverId] = useState<string | null>(null);
+  const didDropRef = useRef(false);
 
   useEffect(() => {
     localStorage.setItem('mstp_cohort_data', JSON.stringify(cohort));
@@ -74,6 +77,48 @@ export default function App() {
   const handleUpdateMember = (updatedMember: CohortMember) => {
     setCohort(prev => prev.map(m => m.id === updatedMember.id ? updatedMember : m));
     setSelectedMember(updatedMember);
+  };
+
+  const handleDragStart = (e: React.DragEvent, id: string) => {
+    e.dataTransfer.effectAllowed = 'move';
+    didDropRef.current = false;
+    setDraggedId(id);
+  };
+
+  const handleDragOver = (e: React.DragEvent, id: string) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    if (id !== draggedId) setDragOverId(id);
+  };
+
+  const handleDragLeave = (e: React.DragEvent) => {
+    if (!e.currentTarget.contains(e.relatedTarget as Node)) {
+      setDragOverId(null);
+    }
+  };
+
+  const handleDrop = (e: React.DragEvent, targetId: string) => {
+    e.preventDefault();
+    didDropRef.current = true;
+    if (!draggedId || draggedId === targetId) {
+      setDraggedId(null);
+      setDragOverId(null);
+      return;
+    }
+    setCohort(prev => {
+      const next = [...prev];
+      const from = next.findIndex(m => m.id === draggedId);
+      const to = next.findIndex(m => m.id === targetId);
+      next.splice(to, 0, next.splice(from, 1)[0]);
+      return next;
+    });
+    setDraggedId(null);
+    setDragOverId(null);
+  };
+
+  const handleDragEnd = () => {
+    setDraggedId(null);
+    setDragOverId(null);
   };
 
   const handleExport = async () => {
@@ -172,11 +217,29 @@ export default function App() {
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {cohort.map((member) => (
-            <PokedexCard
+            <div
               key={member.id}
-              member={member}
-              onClick={() => setSelectedMember(member)}
-            />
+              draggable={canEdit}
+              onDragStart={(e) => handleDragStart(e, member.id)}
+              onDragOver={(e) => handleDragOver(e, member.id)}
+              onDragLeave={handleDragLeave}
+              onDrop={(e) => handleDrop(e, member.id)}
+              onDragEnd={handleDragEnd}
+              className={cn(
+                "transition-all duration-150 rounded-2xl",
+                canEdit && "cursor-grab active:cursor-grabbing",
+                draggedId === member.id && "opacity-30 scale-95",
+                dragOverId === member.id && draggedId !== member.id && "ring-4 ring-pokedex-red ring-offset-4 scale-[1.02]",
+              )}
+            >
+              <PokedexCard
+                member={member}
+                onClick={() => {
+                  if (didDropRef.current) { didDropRef.current = false; return; }
+                  setSelectedMember(member);
+                }}
+              />
+            </div>
           ))}
         </div>
       </main>

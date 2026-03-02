@@ -38,7 +38,7 @@ export interface CohortMember {
 
 // Bump this version whenever you run scripts/import-cohort.mjs and push to Vercel.
 // The app will automatically clear stale localStorage on any browser that has an older version.
-export const COHORT_VERSION = "2026-03-02.0356";
+export const COHORT_VERSION = "2026-03-02.0359";
 
 export const COHORT_DATA: CohortMember[] = [
   {
@@ -297,10 +297,16 @@ export const COHORT_DATA: CohortMember[] = [
       "type2": "#ff0505"
     },
     "galleryImages": [
-      "/images/004-gallery-1.jpg"
+      "/images/004-gallery-1.jpg",
+      "/images/004-gallery-2.jpg",
+      "/images/004-gallery-3.jpg",
+      "/images/004-gallery-4.jpg"
     ],
     "galleryImagePositions": [
-      "50.00% 0.00%"
+      "50.00% 0.00%",
+      "39.72% 50.00%",
+      "26.10% 50.00%",
+      "50.00% 4.34%"
     ]
   },
   {
